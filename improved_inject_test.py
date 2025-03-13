@@ -137,7 +137,8 @@ def inject_dll(pid, dll_path):
     h_process = windll.kernel32.OpenProcess(PROCESS_ALL_ACCESS, False, pid)
     
     if h_process == 0:
-        print_status(f"Failed to open process {pid}: Access denied or invalid PID", "error")
+        error_code = windll.kernel32.GetLastError()
+        print_status(f"Failed to open process {pid}: Access denied or invalid PID (Error: {error_code})", "error")
         return False
     
     try:
@@ -157,7 +158,8 @@ def inject_dll(pid, dll_path):
         )
         
         if remote_memory == 0:
-            print_status("Failed to allocate memory in the target process", "error")
+            error_code = windll.kernel32.GetLastError()
+            print_status(f"Failed to allocate memory in the target process (Error: {error_code})", "error")
             return False
             
         # Write DLL path to process memory
@@ -172,7 +174,8 @@ def inject_dll(pid, dll_path):
         )
         
         if result == 0:
-            print_status("Failed to write to process memory", "error")
+            error_code = windll.kernel32.GetLastError()
+            print_status(f"Failed to write to process memory (Error: {error_code})", "error")
             return False
             
         # Get address of LoadLibraryA
@@ -181,7 +184,8 @@ def inject_dll(pid, dll_path):
         h_loadlib = windll.kernel32.GetProcAddress(h_kernel32, b"LoadLibraryA")
         
         if not h_loadlib:
-            print_status("Failed to locate LoadLibraryA function", "error")
+            error_code = windll.kernel32.GetLastError()
+            print_status(f"Failed to locate LoadLibraryA function (Error: {error_code})", "error")
             return False
             
         # Create remote thread that calls LoadLibraryA(dll_path)
@@ -198,7 +202,8 @@ def inject_dll(pid, dll_path):
         )
         
         if h_thread == 0:
-            print_status("Failed to create remote thread", "error")
+            error_code = windll.kernel32.GetLastError()
+            print_status(f"Failed to create remote thread (Error: {error_code})", "error")
             return False
             
         print_status(f"Injection successful! Remote thread ID: {thread_id.value}", "success")
@@ -208,12 +213,15 @@ def inject_dll(pid, dll_path):
         wait_result = windll.kernel32.WaitForSingleObject(h_thread, 5000)  # Wait up to 5 seconds
         
         if wait_result != WAIT_OBJECT_0:
-            print_status("Warning: Timeout waiting for thread completion", "warning")
+            error_code = windll.kernel32.GetLastError()
+            print_status(f"Warning: Timeout waiting for thread completion (Error: {error_code})", "warning")
         
         return True
         
     except Exception as e:
         print_status(f"Unexpected error during injection: {e}", "error")
+        import traceback
+        traceback.print_exc()
         return False
         
     finally:
