@@ -31,6 +31,8 @@ process_injection_detector/
 ├── requirements.txt                  # Python dependencies
 ├── run_detector.py                   # Script to run the detector
 ├── test_injection.c                  # Test DLL source for injection testing
+├── inject_test.py                    # Basic DLL injection test script
+├── improved_inject_test.py           # Enhanced DLL injection test tool
 ├── README.md                         # This documentation
 ├── LICENSE                           # MIT License
 ├── CONTRIBUTING.md                   # Guidelines for contributors
@@ -111,9 +113,14 @@ The tool creates or uses a `config.json` file with default settings:
 
 ## Testing with the Included Test DLL
 
-This project includes a harmless test DLL source file (`test_injection.c`) that you can use to safely test the process injection detection capabilities.
+This project includes a harmless test DLL source file (`test_injection.c`) and two injection scripts that you can use to safely test the process injection detection capabilities:
+
+1. **inject_test.py**: Basic injection script for simple testing
+2. **improved_inject_test.py**: Enhanced script with better UI and error handling
 
 ### Compiling the Test DLL
+
+Before using the test scripts, compile the test DLL:
 
 1. **Using Visual Studio Command Prompt**:
    ```
@@ -125,80 +132,63 @@ This project includes a harmless test DLL source file (`test_injection.c`) that 
    gcc -shared -o test_injection.dll test_injection.c -luser32
    ```
 
-### Using the Test DLL
+### Automated Testing with Basic Script
 
 1. First, start the Process Injection Detector:
    ```
    python run_detector.py
    ```
 
-2. Then use a DLL injection tool to inject the compiled DLL into a target process. Some options include:
-
-   - **Process Hacker**: Open Process Hacker, right-click on a process (like notepad.exe), select "Miscellaneous" → "Inject DLL", and navigate to your test_injection.dll
-   
-   - **Simple injector script**: You can use this simple Python script (save as `inject_test.py`):
-   
-   ```python
-   import ctypes
-   import sys
-   from ctypes import windll
-   import time
-   
-   # Make sure to run this script as administrator
-   
-   if len(sys.argv) != 3:
-       print("Usage: inject_test.py <PID> <path_to_dll>")
-       sys.exit(1)
-       
-   pid = int(sys.argv[1])
-   dll_path = sys.argv[2]
-   
-   # Get process handle
-   h_process = windll.kernel32.OpenProcess(0x1F0FFF, False, pid)
-   
-   if h_process == 0:
-       print(f"Failed to open process {pid}")
-       sys.exit(1)
-       
-   # Allocate memory for DLL path
-   path_len = len(dll_path) + 1
-   remote_memory = windll.kernel32.VirtualAllocEx(h_process, 0, path_len, 0x1000, 0x40)
-   
-   # Write DLL path to process memory
-   written = ctypes.c_int(0)
-   windll.kernel32.WriteProcessMemory(h_process, remote_memory, dll_path, path_len, ctypes.byref(written))
-   
-   # Get address of LoadLibraryA
-   h_kernel32 = windll.kernel32.GetModuleHandleA(b"kernel32.dll")
-   h_loadlib = windll.kernel32.GetProcAddress(h_kernel32, b"LoadLibraryA")
-   
-   # Create remote thread that calls LoadLibraryA(dll_path)
-   thread_id = ctypes.c_int(0)
-   windll.kernel32.CreateRemoteThread(h_process, 0, 0, h_loadlib, remote_memory, 0, ctypes.byref(thread_id))
-   
-   print(f"Injected {dll_path} into process {pid}")
-   
-   # Give some time for injection to complete
-   time.sleep(1)
-   
-   # Clean up
-   windll.kernel32.CloseHandle(h_process)
+2. Then in another administrator command prompt, run the basic injection test:
    ```
-   
-   Run it with:
-   ```
-   python inject_test.py <target_process_id> <path_to_test_injection.dll>
+   python inject_test.py
    ```
 
-3. **Expected Results**:
-   - A message box will appear, confirming successful injection
-   - The Process Injection Detector should log this as a suspicious activity
-   - Check the `detection_events.json` file for the recorded event
+   The script will:
+   - Find an existing notepad.exe process or start a new one
+   - Inject the test_injection.dll into the process
+   - The Process Injection Detector should detect and log this activity
+
+### Enhanced Testing Experience
+
+For a more user-friendly testing experience with better feedback and error handling:
+
+1. Start the Process Injection Detector:
+   ```
+   python run_detector.py
+   ```
+
+2. Run the improved test script:
+   ```
+   python improved_inject_test.py
+   ```
+
+   This enhanced script provides:
+   - Visual UI with color-coded status messages
+   - Clear progress information during the injection process
+   - Detailed error messages and troubleshooting help
+   - Ability to target different processes: `python improved_inject_test.py test.dll calc.exe`
+   - Proper resource cleanup
+
+### Expected Results
+
+When you run either test script:
+
+1. A notepad.exe window will open (if not already running)
+2. A message box will appear from the injected DLL
+3. The Process Injection Detector will log this as a suspicious activity
+4. The event will be recorded in `detection_events.json`
+
+### Manual Testing Options
+
+If you prefer more control, you can also use other tools to inject the test DLL:
+
+- **Process Hacker**: Open Process Hacker, right-click on a process, select "Miscellaneous" → "Inject DLL", and navigate to your test_injection.dll
 
 ### Safe Testing Practices
 
 - Always test in a controlled environment
-- Target only processes you own (like notepad.exe or calc.exe)
+- The tests only inject into notepad.exe by default (a safe, non-critical process)
 - Consider using a virtual machine for testing
 
 ## Output and Reporting
@@ -212,8 +202,8 @@ The tool generates several outputs:
 Example alert:
 ```
 ⚠️ Potential Process Injection Detected!
-Process: suspicious_process.exe (PID: 1234)
-Details: {'activities': ['Suspicious DLL location: C:\\temp\\malicious.dll']}
+Process: notepad.exe (PID: 1234)
+Details: {'activities': ['Suspicious DLL location: C:\\path\\to\\test_injection.dll']}
 ```
 
 ## Technical Details
