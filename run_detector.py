@@ -9,6 +9,14 @@ directly from the root directory. It requires administrator privileges.
 import sys
 import ctypes
 import os
+import logging
+
+# Fix for Unicode emoji characters in logging
+if sys.platform == 'win32':
+    # Prevent UnicodeEncodeError with emojis on Windows console
+    import io
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
 
 def is_admin():
     """Check if the script is running with administrator privileges"""
@@ -27,6 +35,17 @@ def main():
     
     # Try to import and run the detector
     try:
+        # Configure logging to handle emoji characters
+        logging.basicConfig(
+            level=logging.INFO,
+            format='%(asctime)s - %(levelname)s - %(message)s',
+            handlers=[
+                logging.FileHandler('process_injection_detector.log', encoding='utf-8'),
+                logging.StreamHandler()
+            ]
+        )
+        
+        print("Starting Process Injection Detector...")
         from process_injection_detector import main as detector_main
         detector_main()
     except ImportError:

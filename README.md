@@ -31,8 +31,8 @@ process_injection_detector/
 ├── requirements.txt                  # Python dependencies
 ├── run_detector.py                   # Script to run the detector
 ├── test_injection.c                  # Test DLL source for injection testing
-├── inject_test.py                    # Basic DLL injection test script
-├── improved_inject_test.py           # Enhanced DLL injection test tool
+├── test_injection.dll                # Compiled test DLL for injection testing
+├── inject_test.py                    # DLL injection test script
 ├── README.md                         # This documentation
 ├── LICENSE                           # MIT License
 ├── CONTRIBUTING.md                   # Guidelines for contributors
@@ -113,10 +113,7 @@ The tool creates or uses a `config.json` file with default settings:
 
 ## Testing with the Included Test DLL
 
-This project includes a harmless test DLL source file (`test_injection.c`) and two injection scripts that you can use to safely test the process injection detection capabilities:
-
-1. **inject_test.py**: Basic injection script for simple testing
-2. **improved_inject_test.py**: Enhanced script with better UI and error handling
+This project includes a harmless test DLL source file (`test_injection.c`) and an injection script that you can use to safely test the process injection detection capabilities.
 
 ### Compiling the Test DLL
 
@@ -132,14 +129,14 @@ Before using the test scripts, compile the test DLL:
    gcc -shared -o test_injection.dll test_injection.c -luser32
    ```
 
-### Automated Testing with Basic Script
+### Automated Testing with Injection Script
 
 1. First, start the Process Injection Detector:
    ```
    python run_detector.py
    ```
 
-2. Then in another administrator command prompt, run the basic injection test:
+2. Then in another administrator command prompt, run the injection test:
    ```
    python inject_test.py
    ```
@@ -149,30 +146,9 @@ Before using the test scripts, compile the test DLL:
    - Inject the test_injection.dll into the process
    - The Process Injection Detector should detect and log this activity
 
-### Enhanced Testing Experience
-
-For a more user-friendly testing experience with better feedback and error handling:
-
-1. Start the Process Injection Detector:
-   ```
-   python run_detector.py
-   ```
-
-2. Run the improved test script:
-   ```
-   python improved_inject_test.py
-   ```
-
-   This enhanced script provides:
-   - Visual UI with color-coded status messages
-   - Clear progress information during the injection process
-   - Detailed error messages and troubleshooting help
-   - Ability to target different processes: `python improved_inject_test.py test.dll calc.exe`
-   - Proper resource cleanup
-
 ### Expected Results
 
-When you run either test script:
+When you run the test script:
 
 1. A notepad.exe window will open (if not already running)
 2. A message box will appear from the injected DLL
