@@ -1,0 +1,248 @@
+{
+  "communities": {
+    "0": [
+      "contributing_guidelines",
+      "process_injection_detector_detector_rationale_147",
+      "process_injection_detector_process_injection_detector_injectionevent",
+      "process_injection_detector_process_injection_detector_main",
+      "process_injection_detector_process_injection_detector_processinfo",
+      "process_injection_detector_process_injection_detector_processinjectiondetector_alert_admin",
+      "process_injection_detector_process_injection_detector_processinjectiondetector_calculate_file_hash",
+      "process_injection_detector_process_injection_detector_processinjectiondetector_detect_process_hollowing",
+      "process_injection_detector_process_injection_detector_processinjectiondetector_get_process_info",
+      "process_injection_detector_process_injection_detector_processinjectiondetector_handle_detection",
+      "process_injection_detector_process_injection_detector_processinjectiondetector_monitor_processes",
+      "process_injection_detector_process_injection_detector_processinjectiondetector_save_event",
+      "process_injection_detector_process_injection_detector_processinjectiondetector_verify_signature",
+      "process_injection_detector_process_injection_detector_rationale_100",
+      "process_injection_detector_process_injection_detector_rationale_127",
+      "process_injection_detector_process_injection_detector_rationale_138",
+      "process_injection_detector_process_injection_detector_rationale_167",
+      "process_injection_detector_process_injection_detector_rationale_227",
+      "process_injection_detector_process_injection_detector_rationale_240",
+      "process_injection_detector_process_injection_detector_rationale_254",
+      "process_injection_detector_py",
+      "process_injection_detector_py_bool",
+      "process_injection_detector_py_int",
+      "process_injection_detector_py_process",
+      "process_injection_detector_py_str"
+    ],
+    "1": [
+      "inject_test_py",
+      "process_injection_detector_inject_test_colors",
+      "process_injection_detector_inject_test_find_dll_path",
+      "process_injection_detector_inject_test_find_or_start_target_process",
+      "process_injection_detector_inject_test_inject_dll",
+      "process_injection_detector_inject_test_is_admin",
+      "process_injection_detector_inject_test_main",
+      "process_injection_detector_inject_test_print_banner",
+      "process_injection_detector_inject_test_print_status",
+      "process_injection_detector_inject_test_rationale_101",
+      "process_injection_detector_inject_test_rationale_133",
+      "process_injection_detector_inject_test_rationale_231",
+      "process_injection_detector_inject_test_rationale_259",
+      "process_injection_detector_inject_test_rationale_58",
+      "process_injection_detector_inject_test_rationale_71",
+      "process_injection_detector_inject_test_rationale_91",
+      "process_injection_detector_test_injection_dllmain",
+      "test_injection_c"
+    ],
+    "2": [
+      "concept_dll_injection",
+      "concept_memory_anomalies",
+      "concept_process_hollowing",
+      "config_json",
+      "detector_core",
+      "process_injection_detector_run_detector_is_admin",
+      "process_injection_detector_run_detector_main",
+      "process_injection_detector_run_detector_rationale_22",
+      "requirements_psutil",
+      "requirements_pywin32",
+      "run_detector_py"
+    ],
+    "3": [
+      "tests_test_basic_rationale_16",
+      "tests_test_basic_rationale_35",
+      "tests_test_basic_rationale_59",
+      "tests_test_basic_testprocessinjectiondetector",
+      "tests_test_basic_testprocessinjectiondetector_setup",
+      "tests_test_basic_testprocessinjectiondetector_teardown",
+      "tests_test_basic_testprocessinjectiondetector_test_config_loading",
+      "tests_test_basic_testprocessinjectiondetector_test_process_info_creation"
+    ],
+    "4": [
+      "process_injection_detector_detector_injectionevent",
+      "process_injection_detector_detector_processinjectiondetector_alert_admin",
+      "process_injection_detector_detector_processinjectiondetector_handle_detection",
+      "process_injection_detector_detector_processinjectiondetector_save_event",
+      "process_injection_detector_detector_rationale_227",
+      "process_injection_detector_detector_rationale_240",
+      "process_injection_detector_detector_rationale_254"
+    ],
+    "5": [
+      "process_injection_detector_detector_processinjectiondetector_calculate_file_hash",
+      "process_injection_detector_detector_processinjectiondetector_detect_classic_injection",
+      "process_injection_detector_detector_processinjectiondetector_detect_process_hollowing",
+      "process_injection_detector_detector_py_process",
+      "process_injection_detector_detector_py_str",
+      "process_injection_detector_detector_rationale_138",
+      "process_injection_detector_detector_rationale_167"
+    ],
+    "6": [
+      "process_injection_detector_detector_main",
+      "process_injection_detector_detector_processinfo",
+      "process_injection_detector_detector_processinjectiondetector",
+      "process_injection_detector_detector_processinjectiondetector_monitor_processes",
+      "process_injection_detector_init_py",
+      "tests_test_basic_py"
+    ],
+    "7": [
+      "process_injection_detector_detector_processinjectiondetector_get_process_info",
+      "process_injection_detector_detector_processinjectiondetector_verify_signature",
+      "process_injection_detector_detector_py_bool",
+      "process_injection_detector_detector_py_int",
+      "process_injection_detector_detector_rationale_100",
+      "process_injection_detector_detector_rationale_127"
+    ],
+    "8": [
+      "process_injection_detector_detector_processinjectiondetector_check_privileges",
+      "process_injection_detector_detector_processinjectiondetector_init",
+      "process_injection_detector_detector_processinjectiondetector_load_config",
+      "process_injection_detector_detector_rationale_72",
+      "process_injection_detector_detector_rationale_89"
+    ],
+    "9": [
+      "process_injection_detector_process_injection_detector_processinjectiondetector_check_privileges",
+      "process_injection_detector_process_injection_detector_processinjectiondetector_init",
+      "process_injection_detector_process_injection_detector_processinjectiondetector_load_config",
+      "process_injection_detector_process_injection_detector_rationale_72",
+      "process_injection_detector_process_injection_detector_rationale_89"
+    ],
+    "10": [
+      "setup_py"
+    ],
+    "11": [
+      "tests_init_py"
+    ],
+    "12": [
+      "requirements_dataclasses"
+    ]
+  },
+  "cohesion": {
+    "0": 0.14333333333333334,
+    "1": 0.16993464052287582,
+    "2": 0.2,
+    "3": 0.25,
+    "4": 0.38095238095238093,
+    "5": 0.3333333333333333,
+    "6": 0.5333333333333333,
+    "7": 0.3333333333333333,
+    "8": 0.4,
+    "9": 0.4,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0
+  },
+  "gods": [
+    {
+      "id": "process_injection_detector_detector_processinjectiondetector",
+      "label": "ProcessInjectionDetector",
+      "degree": 16
+    },
+    {
+      "id": "process_injection_detector_inject_test_main",
+      "label": "main()",
+      "degree": 8
+    },
+    {
+      "id": "tests_test_basic_testprocessinjectiondetector",
+      "label": "TestProcessInjectionDetector",
+      "degree": 7
+    },
+    {
+      "id": "process_injection_detector_inject_test_print_status",
+      "label": "print_status()",
+      "degree": 6
+    },
+    {
+      "id": "process_injection_detector_detector_injectionevent",
+      "label": "InjectionEvent",
+      "degree": 6
+    },
+    {
+      "id": "process_injection_detector_detector_main",
+      "label": "main()",
+      "degree": 6
+    },
+    {
+      "id": "process_injection_detector_process_injection_detector_injectionevent",
+      "label": "InjectionEvent",
+      "degree": 5
+    },
+    {
+      "id": "process_injection_detector_detector_rationale_147",
+      "label": "Detect classic injection techniques",
+      "degree": 5
+    },
+    {
+      "id": "process_injection_detector_py_str",
+      "label": "str",
+      "degree": 4
+    },
+    {
+      "id": "process_injection_detector_inject_test_find_or_start_target_process",
+      "label": "find_or_start_target_process()",
+      "degree": 4
+    }
+  ],
+  "surprises": [
+    {
+      "source": "TestProcessInjectionDetector",
+      "target": "ProcessInfo",
+      "source_files": [
+        "tests/test_basic.py",
+        "process_injection_detector.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "main()",
+      "target": "main()",
+      "source_files": [
+        "run_detector.py",
+        "process_injection_detector/detector.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "Detect classic injection techniques",
+      "target": "str",
+      "source_files": [
+        "process_injection_detector/detector.py",
+        "process_injection_detector.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories"
+    },
+    {
+      "source": "Detect classic injection techniques",
+      "target": "Process",
+      "source_files": [
+        "process_injection_detector/detector.py",
+        "process_injection_detector.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories"
+    }
+  ],
+  "tokens": {
+    "input": 2528,
+    "output": 2140
+  }
+}

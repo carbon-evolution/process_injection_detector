@@ -1,0 +1,2617 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "test_injection.c",
+      "file_type": "code",
+      "source_file": "test_injection.c",
+      "source_location": "L1",
+      "id": "test_injection_c",
+      "community": 1,
+      "norm_label": "test_injection.c"
+    },
+    {
+      "label": "DllMain()",
+      "file_type": "code",
+      "source_file": "test_injection.c",
+      "source_location": "L13",
+      "id": "process_injection_detector_test_injection_dllmain",
+      "community": 1,
+      "norm_label": "dllmain()"
+    },
+    {
+      "label": "run_detector.py",
+      "file_type": "code",
+      "source_file": "run_detector.py",
+      "source_location": "L1",
+      "id": "run_detector_py",
+      "community": 2,
+      "norm_label": "run_detector.py"
+    },
+    {
+      "label": "is_admin()",
+      "file_type": "code",
+      "source_file": "run_detector.py",
+      "source_location": "L21",
+      "id": "process_injection_detector_run_detector_is_admin",
+      "community": 2,
+      "norm_label": "is_admin()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "run_detector.py",
+      "source_location": "L28",
+      "id": "process_injection_detector_run_detector_main",
+      "community": 2,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Check if the script is running with administrator privileges",
+      "file_type": "rationale",
+      "source_file": "run_detector.py",
+      "source_location": "L22",
+      "id": "process_injection_detector_run_detector_rationale_22",
+      "community": 2,
+      "norm_label": "check if the script is running with administrator privileges"
+    },
+    {
+      "label": "process_injection_detector.py",
+      "file_type": "code",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L1",
+      "id": "process_injection_detector_py",
+      "community": 0,
+      "norm_label": "process_injection_detector.py"
+    },
+    {
+      "label": "ProcessInfo",
+      "file_type": "code",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L31",
+      "id": "process_injection_detector_process_injection_detector_processinfo",
+      "community": 0,
+      "norm_label": "processinfo"
+    },
+    {
+      "label": "InjectionEvent",
+      "file_type": "code",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L43",
+      "id": "process_injection_detector_process_injection_detector_injectionevent",
+      "community": 0,
+      "norm_label": "injectionevent"
+    },
+    {
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L51",
+      "id": "process_injection_detector_process_injection_detector_processinjectiondetector_init",
+      "community": 9,
+      "norm_label": ".__init__()"
+    },
+    {
+      "label": ".load_config()",
+      "file_type": "code",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L71",
+      "id": "process_injection_detector_process_injection_detector_processinjectiondetector_load_config",
+      "community": 9,
+      "norm_label": ".load_config()"
+    },
+    {
+      "label": ".check_privileges()",
+      "file_type": "code",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L88",
+      "id": "process_injection_detector_process_injection_detector_processinjectiondetector_check_privileges",
+      "community": 9,
+      "norm_label": ".check_privileges()"
+    },
+    {
+      "label": ".get_process_info()",
+      "file_type": "code",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L99",
+      "id": "process_injection_detector_process_injection_detector_processinjectiondetector_get_process_info",
+      "community": 0,
+      "norm_label": ".get_process_info()"
+    },
+    {
+      "label": "int",
+      "file_type": "code",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L99",
+      "id": "process_injection_detector_py_int",
+      "community": 0,
+      "norm_label": "int"
+    },
+    {
+      "label": ".verify_signature()",
+      "file_type": "code",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L126",
+      "id": "process_injection_detector_process_injection_detector_processinjectiondetector_verify_signature",
+      "community": 0,
+      "norm_label": ".verify_signature()"
+    },
+    {
+      "label": "str",
+      "file_type": "code",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L126",
+      "id": "process_injection_detector_py_str",
+      "community": 0,
+      "norm_label": "str"
+    },
+    {
+      "label": "bool",
+      "file_type": "code",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L126",
+      "id": "process_injection_detector_py_bool",
+      "community": 0,
+      "norm_label": "bool"
+    },
+    {
+      "label": ".calculate_file_hash()",
+      "file_type": "code",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L137",
+      "id": "process_injection_detector_process_injection_detector_processinjectiondetector_calculate_file_hash",
+      "community": 0,
+      "norm_label": ".calculate_file_hash()"
+    },
+    {
+      "label": "Process",
+      "file_type": "code",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L146",
+      "id": "process_injection_detector_py_process",
+      "community": 0,
+      "norm_label": "process"
+    },
+    {
+      "label": ".detect_process_hollowing()",
+      "file_type": "code",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L166",
+      "id": "process_injection_detector_process_injection_detector_processinjectiondetector_detect_process_hollowing",
+      "community": 0,
+      "norm_label": ".detect_process_hollowing()"
+    },
+    {
+      "label": ".monitor_processes()",
+      "file_type": "code",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L187",
+      "id": "process_injection_detector_process_injection_detector_processinjectiondetector_monitor_processes",
+      "community": 0,
+      "norm_label": ".monitor_processes()"
+    },
+    {
+      "label": ".handle_detection()",
+      "file_type": "code",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L226",
+      "id": "process_injection_detector_process_injection_detector_processinjectiondetector_handle_detection",
+      "community": 0,
+      "norm_label": ".handle_detection()"
+    },
+    {
+      "label": ".save_event()",
+      "file_type": "code",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L239",
+      "id": "process_injection_detector_process_injection_detector_processinjectiondetector_save_event",
+      "community": 0,
+      "norm_label": ".save_event()"
+    },
+    {
+      "label": ".alert_admin()",
+      "file_type": "code",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L253",
+      "id": "process_injection_detector_process_injection_detector_processinjectiondetector_alert_admin",
+      "community": 0,
+      "norm_label": ".alert_admin()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L258",
+      "id": "process_injection_detector_process_injection_detector_main",
+      "community": 0,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Load configuration from config.json file",
+      "file_type": "rationale",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L72",
+      "id": "process_injection_detector_process_injection_detector_rationale_72",
+      "community": 9,
+      "norm_label": "load configuration from config.json file"
+    },
+    {
+      "label": "Ensure the script is running with administrator privileges",
+      "file_type": "rationale",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L89",
+      "id": "process_injection_detector_process_injection_detector_rationale_89",
+      "community": 9,
+      "norm_label": "ensure the script is running with administrator privileges"
+    },
+    {
+      "label": "Gather detailed information about a process",
+      "file_type": "rationale",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L100",
+      "id": "process_injection_detector_process_injection_detector_rationale_100",
+      "community": 0,
+      "norm_label": "gather detailed information about a process"
+    },
+    {
+      "label": "Verify digital signature of a file",
+      "file_type": "rationale",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L127",
+      "id": "process_injection_detector_process_injection_detector_rationale_127",
+      "community": 0,
+      "norm_label": "verify digital signature of a file"
+    },
+    {
+      "label": "Calculate SHA256 hash of a file",
+      "file_type": "rationale",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L138",
+      "id": "process_injection_detector_process_injection_detector_rationale_138",
+      "community": 0,
+      "norm_label": "calculate sha256 hash of a file"
+    },
+    {
+      "label": "Detect process hollowing techniques",
+      "file_type": "rationale",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L167",
+      "id": "process_injection_detector_process_injection_detector_rationale_167",
+      "community": 0,
+      "norm_label": "detect process hollowing techniques"
+    },
+    {
+      "label": "Handle detected injection events",
+      "file_type": "rationale",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L227",
+      "id": "process_injection_detector_process_injection_detector_rationale_227",
+      "community": 0,
+      "norm_label": "handle detected injection events"
+    },
+    {
+      "label": "Save detection event to JSON file",
+      "file_type": "rationale",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L240",
+      "id": "process_injection_detector_process_injection_detector_rationale_240",
+      "community": 0,
+      "norm_label": "save detection event to json file"
+    },
+    {
+      "label": "Send alert to administrator",
+      "file_type": "rationale",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L254",
+      "id": "process_injection_detector_process_injection_detector_rationale_254",
+      "community": 0,
+      "norm_label": "send alert to administrator"
+    },
+    {
+      "label": "setup.py",
+      "file_type": "code",
+      "source_file": "setup.py",
+      "source_location": "L1",
+      "id": "setup_py",
+      "community": 10,
+      "norm_label": "setup.py"
+    },
+    {
+      "label": "inject_test.py",
+      "file_type": "code",
+      "source_file": "inject_test.py",
+      "source_location": "L1",
+      "id": "inject_test_py",
+      "community": 1,
+      "norm_label": "inject_test.py"
+    },
+    {
+      "label": "Colors",
+      "file_type": "code",
+      "source_file": "inject_test.py",
+      "source_location": "L47",
+      "id": "process_injection_detector_inject_test_colors",
+      "community": 1,
+      "norm_label": "colors"
+    },
+    {
+      "label": "print_banner()",
+      "file_type": "code",
+      "source_file": "inject_test.py",
+      "source_location": "L57",
+      "id": "process_injection_detector_inject_test_print_banner",
+      "community": 1,
+      "norm_label": "print_banner()"
+    },
+    {
+      "label": "print_status()",
+      "file_type": "code",
+      "source_file": "inject_test.py",
+      "source_location": "L70",
+      "id": "process_injection_detector_inject_test_print_status",
+      "community": 1,
+      "norm_label": "print_status()"
+    },
+    {
+      "label": "is_admin()",
+      "file_type": "code",
+      "source_file": "inject_test.py",
+      "source_location": "L90",
+      "id": "process_injection_detector_inject_test_is_admin",
+      "community": 1,
+      "norm_label": "is_admin()"
+    },
+    {
+      "label": "find_or_start_target_process()",
+      "file_type": "code",
+      "source_file": "inject_test.py",
+      "source_location": "L100",
+      "id": "process_injection_detector_inject_test_find_or_start_target_process",
+      "community": 1,
+      "norm_label": "find_or_start_target_process()"
+    },
+    {
+      "label": "inject_dll()",
+      "file_type": "code",
+      "source_file": "inject_test.py",
+      "source_location": "L132",
+      "id": "process_injection_detector_inject_test_inject_dll",
+      "community": 1,
+      "norm_label": "inject_dll()"
+    },
+    {
+      "label": "find_dll_path()",
+      "file_type": "code",
+      "source_file": "inject_test.py",
+      "source_location": "L230",
+      "id": "process_injection_detector_inject_test_find_dll_path",
+      "community": 1,
+      "norm_label": "find_dll_path()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "inject_test.py",
+      "source_location": "L258",
+      "id": "process_injection_detector_inject_test_main",
+      "community": 1,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Print a nice banner for the tool",
+      "file_type": "rationale",
+      "source_file": "inject_test.py",
+      "source_location": "L58",
+      "id": "process_injection_detector_inject_test_rationale_58",
+      "community": 1,
+      "norm_label": "print a nice banner for the tool"
+    },
+    {
+      "label": "Print a status message with appropriate formatting",
+      "file_type": "rationale",
+      "source_file": "inject_test.py",
+      "source_location": "L71",
+      "id": "process_injection_detector_inject_test_rationale_71",
+      "community": 1,
+      "norm_label": "print a status message with appropriate formatting"
+    },
+    {
+      "label": "Check if the script is running with administrator privileges",
+      "file_type": "rationale",
+      "source_file": "inject_test.py",
+      "source_location": "L91",
+      "id": "process_injection_detector_inject_test_rationale_91",
+      "community": 1,
+      "norm_label": "check if the script is running with administrator privileges"
+    },
+    {
+      "label": "Find a suitable process to inject into, or start one if necessary",
+      "file_type": "rationale",
+      "source_file": "inject_test.py",
+      "source_location": "L101",
+      "id": "process_injection_detector_inject_test_rationale_101",
+      "community": 1,
+      "norm_label": "find a suitable process to inject into, or start one if necessary"
+    },
+    {
+      "label": "Inject a DLL into a process using classic DLL injection technique",
+      "file_type": "rationale",
+      "source_file": "inject_test.py",
+      "source_location": "L133",
+      "id": "process_injection_detector_inject_test_rationale_133",
+      "community": 1,
+      "norm_label": "inject a dll into a process using classic dll injection technique"
+    },
+    {
+      "label": "Find the DLL to inject, using custom path or looking for default",
+      "file_type": "rationale",
+      "source_file": "inject_test.py",
+      "source_location": "L231",
+      "id": "process_injection_detector_inject_test_rationale_231",
+      "community": 1,
+      "norm_label": "find the dll to inject, using custom path or looking for default"
+    },
+    {
+      "label": "Main entry point for the script",
+      "file_type": "rationale",
+      "source_file": "inject_test.py",
+      "source_location": "L259",
+      "id": "process_injection_detector_inject_test_rationale_259",
+      "community": 1,
+      "norm_label": "main entry point for the script"
+    },
+    {
+      "label": "ProcessInfo",
+      "file_type": "code",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L31",
+      "id": "process_injection_detector_detector_processinfo",
+      "community": 6,
+      "norm_label": "processinfo"
+    },
+    {
+      "label": "InjectionEvent",
+      "file_type": "code",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L43",
+      "id": "process_injection_detector_detector_injectionevent",
+      "community": 4,
+      "norm_label": "injectionevent"
+    },
+    {
+      "label": "ProcessInjectionDetector",
+      "file_type": "code",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L50",
+      "id": "process_injection_detector_detector_processinjectiondetector",
+      "community": 6,
+      "norm_label": "processinjectiondetector"
+    },
+    {
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L51",
+      "id": "process_injection_detector_detector_processinjectiondetector_init",
+      "community": 8,
+      "norm_label": ".__init__()"
+    },
+    {
+      "label": ".load_config()",
+      "file_type": "code",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L71",
+      "id": "process_injection_detector_detector_processinjectiondetector_load_config",
+      "community": 8,
+      "norm_label": ".load_config()"
+    },
+    {
+      "label": ".check_privileges()",
+      "file_type": "code",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L88",
+      "id": "process_injection_detector_detector_processinjectiondetector_check_privileges",
+      "community": 8,
+      "norm_label": ".check_privileges()"
+    },
+    {
+      "label": ".get_process_info()",
+      "file_type": "code",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L99",
+      "id": "process_injection_detector_detector_processinjectiondetector_get_process_info",
+      "community": 7,
+      "norm_label": ".get_process_info()"
+    },
+    {
+      "label": "int",
+      "file_type": "code",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L99",
+      "id": "process_injection_detector_detector_py_int",
+      "community": 7,
+      "norm_label": "int"
+    },
+    {
+      "label": ".verify_signature()",
+      "file_type": "code",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L126",
+      "id": "process_injection_detector_detector_processinjectiondetector_verify_signature",
+      "community": 7,
+      "norm_label": ".verify_signature()"
+    },
+    {
+      "label": "str",
+      "file_type": "code",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L126",
+      "id": "process_injection_detector_detector_py_str",
+      "community": 5,
+      "norm_label": "str"
+    },
+    {
+      "label": "bool",
+      "file_type": "code",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L126",
+      "id": "process_injection_detector_detector_py_bool",
+      "community": 7,
+      "norm_label": "bool"
+    },
+    {
+      "label": ".calculate_file_hash()",
+      "file_type": "code",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L137",
+      "id": "process_injection_detector_detector_processinjectiondetector_calculate_file_hash",
+      "community": 5,
+      "norm_label": ".calculate_file_hash()"
+    },
+    {
+      "label": ".detect_classic_injection()",
+      "file_type": "code",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L146",
+      "id": "process_injection_detector_detector_processinjectiondetector_detect_classic_injection",
+      "community": 5,
+      "norm_label": ".detect_classic_injection()"
+    },
+    {
+      "label": "Process",
+      "file_type": "code",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L146",
+      "id": "process_injection_detector_detector_py_process",
+      "community": 5,
+      "norm_label": "process"
+    },
+    {
+      "label": ".detect_process_hollowing()",
+      "file_type": "code",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L166",
+      "id": "process_injection_detector_detector_processinjectiondetector_detect_process_hollowing",
+      "community": 5,
+      "norm_label": ".detect_process_hollowing()"
+    },
+    {
+      "label": ".monitor_processes()",
+      "file_type": "code",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L187",
+      "id": "process_injection_detector_detector_processinjectiondetector_monitor_processes",
+      "community": 6,
+      "norm_label": ".monitor_processes()"
+    },
+    {
+      "label": ".handle_detection()",
+      "file_type": "code",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L226",
+      "id": "process_injection_detector_detector_processinjectiondetector_handle_detection",
+      "community": 4,
+      "norm_label": ".handle_detection()"
+    },
+    {
+      "label": ".save_event()",
+      "file_type": "code",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L239",
+      "id": "process_injection_detector_detector_processinjectiondetector_save_event",
+      "community": 4,
+      "norm_label": ".save_event()"
+    },
+    {
+      "label": ".alert_admin()",
+      "file_type": "code",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L253",
+      "id": "process_injection_detector_detector_processinjectiondetector_alert_admin",
+      "community": 4,
+      "norm_label": ".alert_admin()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L258",
+      "id": "process_injection_detector_detector_main",
+      "community": 6,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Load configuration from config.json file",
+      "file_type": "rationale",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L72",
+      "id": "process_injection_detector_detector_rationale_72",
+      "community": 8,
+      "norm_label": "load configuration from config.json file"
+    },
+    {
+      "label": "Ensure the script is running with administrator privileges",
+      "file_type": "rationale",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L89",
+      "id": "process_injection_detector_detector_rationale_89",
+      "community": 8,
+      "norm_label": "ensure the script is running with administrator privileges"
+    },
+    {
+      "label": "Gather detailed information about a process",
+      "file_type": "rationale",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L100",
+      "id": "process_injection_detector_detector_rationale_100",
+      "community": 7,
+      "norm_label": "gather detailed information about a process"
+    },
+    {
+      "label": "Verify digital signature of a file",
+      "file_type": "rationale",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L127",
+      "id": "process_injection_detector_detector_rationale_127",
+      "community": 7,
+      "norm_label": "verify digital signature of a file"
+    },
+    {
+      "label": "Calculate SHA256 hash of a file",
+      "file_type": "rationale",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L138",
+      "id": "process_injection_detector_detector_rationale_138",
+      "community": 5,
+      "norm_label": "calculate sha256 hash of a file"
+    },
+    {
+      "label": "Detect classic injection techniques",
+      "file_type": "rationale",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L147",
+      "id": "process_injection_detector_detector_rationale_147",
+      "community": 0,
+      "norm_label": "detect classic injection techniques"
+    },
+    {
+      "label": "Detect process hollowing techniques",
+      "file_type": "rationale",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L167",
+      "id": "process_injection_detector_detector_rationale_167",
+      "community": 5,
+      "norm_label": "detect process hollowing techniques"
+    },
+    {
+      "label": "Handle detected injection events",
+      "file_type": "rationale",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L227",
+      "id": "process_injection_detector_detector_rationale_227",
+      "community": 4,
+      "norm_label": "handle detected injection events"
+    },
+    {
+      "label": "Save detection event to JSON file",
+      "file_type": "rationale",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L240",
+      "id": "process_injection_detector_detector_rationale_240",
+      "community": 4,
+      "norm_label": "save detection event to json file"
+    },
+    {
+      "label": "Send alert to administrator",
+      "file_type": "rationale",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L254",
+      "id": "process_injection_detector_detector_rationale_254",
+      "community": 4,
+      "norm_label": "send alert to administrator"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "process_injection_detector/__init__.py",
+      "source_location": "L1",
+      "id": "process_injection_detector_init_py",
+      "community": 6,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "test_basic.py",
+      "file_type": "code",
+      "source_file": "tests/test_basic.py",
+      "source_location": "L1",
+      "id": "tests_test_basic_py",
+      "community": 6,
+      "norm_label": "test_basic.py"
+    },
+    {
+      "label": "TestProcessInjectionDetector",
+      "file_type": "code",
+      "source_file": "tests/test_basic.py",
+      "source_location": "L13",
+      "id": "tests_test_basic_testprocessinjectiondetector",
+      "community": 3,
+      "norm_label": "testprocessinjectiondetector"
+    },
+    {
+      "label": ".setUp()",
+      "file_type": "code",
+      "source_file": "tests/test_basic.py",
+      "source_location": "L15",
+      "id": "tests_test_basic_testprocessinjectiondetector_setup",
+      "community": 3,
+      "norm_label": ".setup()"
+    },
+    {
+      "label": ".tearDown()",
+      "file_type": "code",
+      "source_file": "tests/test_basic.py",
+      "source_location": "L29",
+      "id": "tests_test_basic_testprocessinjectiondetector_teardown",
+      "community": 3,
+      "norm_label": ".teardown()"
+    },
+    {
+      "label": ".test_process_info_creation()",
+      "file_type": "code",
+      "source_file": "tests/test_basic.py",
+      "source_location": "L34",
+      "id": "tests_test_basic_testprocessinjectiondetector_test_process_info_creation",
+      "community": 3,
+      "norm_label": ".test_process_info_creation()"
+    },
+    {
+      "label": ".test_config_loading()",
+      "file_type": "code",
+      "source_file": "tests/test_basic.py",
+      "source_location": "L58",
+      "id": "tests_test_basic_testprocessinjectiondetector_test_config_loading",
+      "community": 3,
+      "norm_label": ".test_config_loading()"
+    },
+    {
+      "label": "Set up test environment",
+      "file_type": "rationale",
+      "source_file": "tests/test_basic.py",
+      "source_location": "L16",
+      "id": "tests_test_basic_rationale_16",
+      "community": 3,
+      "norm_label": "set up test environment"
+    },
+    {
+      "label": "Test creation of ProcessInfo object",
+      "file_type": "rationale",
+      "source_file": "tests/test_basic.py",
+      "source_location": "L35",
+      "id": "tests_test_basic_rationale_35",
+      "community": 3,
+      "norm_label": "test creation of processinfo object"
+    },
+    {
+      "label": "Test that configuration is loaded correctly",
+      "file_type": "rationale",
+      "source_file": "tests/test_basic.py",
+      "source_location": "L59",
+      "id": "tests_test_basic_rationale_59",
+      "community": 3,
+      "norm_label": "test that configuration is loaded correctly"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "tests/__init__.py",
+      "source_location": "L1",
+      "id": "tests_init_py",
+      "community": 11,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "psutil",
+      "file_type": "code",
+      "source_file": "requirements.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "requirements_psutil",
+      "community": 2,
+      "norm_label": "psutil"
+    },
+    {
+      "label": "pywin32",
+      "file_type": "code",
+      "source_file": "requirements.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "requirements_pywin32",
+      "community": 2,
+      "norm_label": "pywin32"
+    },
+    {
+      "label": "dataclasses",
+      "file_type": "code",
+      "source_file": "requirements.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "requirements_dataclasses",
+      "community": 12,
+      "norm_label": "dataclasses"
+    },
+    {
+      "label": "detector.py",
+      "file_type": "code",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "detector_core",
+      "community": 2,
+      "norm_label": "detector.py"
+    },
+    {
+      "label": "config.json",
+      "file_type": "document",
+      "source_file": "config.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "config_json",
+      "community": 2,
+      "norm_label": "config.json"
+    },
+    {
+      "label": "Contributing Guidelines",
+      "file_type": "document",
+      "source_file": "CONTRIBUTING.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "contributing_guidelines",
+      "community": 0,
+      "norm_label": "contributing guidelines"
+    },
+    {
+      "label": "Classic DLL Injection",
+      "file_type": "concept",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_dll_injection",
+      "community": 2,
+      "norm_label": "classic dll injection"
+    },
+    {
+      "label": "Process Hollowing",
+      "file_type": "concept",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_process_hollowing",
+      "community": 2,
+      "norm_label": "process hollowing"
+    },
+    {
+      "label": "Memory Permission Anomalies",
+      "file_type": "concept",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_memory_anomalies",
+      "community": 2,
+      "norm_label": "memory permission anomalies"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "test_injection.c",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "test_injection_c",
+      "target": "process_injection_detector_test_injection_dllmain",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "inject_test_py",
+      "target": "test_injection_c"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "run_detector.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "run_detector_py",
+      "target": "process_injection_detector_run_detector_is_admin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "run_detector.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "run_detector_py",
+      "target": "process_injection_detector_run_detector_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "run_detector.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "run_detector_py",
+      "target": "process_injection_detector_detector_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "run_detector_py",
+      "target": "detector_core"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "run_detector.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "process_injection_detector_run_detector_main",
+      "target": "process_injection_detector_run_detector_is_admin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "run_detector.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "process_injection_detector_run_detector_rationale_22",
+      "target": "process_injection_detector_run_detector_is_admin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "run_detector.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "process_injection_detector_run_detector_main",
+      "target": "process_injection_detector_detector_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "process_injection_detector_py",
+      "target": "process_injection_detector_process_injection_detector_processinfo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "process_injection_detector_py",
+      "target": "process_injection_detector_process_injection_detector_injectionevent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "process_injection_detector_py",
+      "target": "process_injection_detector_process_injection_detector_processinjectiondetector_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "process_injection_detector_py",
+      "target": "process_injection_detector_process_injection_detector_processinjectiondetector_load_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "process_injection_detector_py",
+      "target": "process_injection_detector_process_injection_detector_processinjectiondetector_check_privileges",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "process_injection_detector_py",
+      "target": "process_injection_detector_process_injection_detector_processinjectiondetector_get_process_info",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L126",
+      "weight": 1.0,
+      "source": "process_injection_detector_py",
+      "target": "process_injection_detector_process_injection_detector_processinjectiondetector_verify_signature",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L137",
+      "weight": 1.0,
+      "source": "process_injection_detector_py",
+      "target": "process_injection_detector_process_injection_detector_processinjectiondetector_calculate_file_hash",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L146",
+      "weight": 1.0,
+      "source": "process_injection_detector_py",
+      "target": "process_injection_detector_detector_rationale_147",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L166",
+      "weight": 1.0,
+      "source": "process_injection_detector_py",
+      "target": "process_injection_detector_process_injection_detector_processinjectiondetector_detect_process_hollowing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L187",
+      "weight": 1.0,
+      "source": "process_injection_detector_py",
+      "target": "process_injection_detector_process_injection_detector_processinjectiondetector_monitor_processes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L226",
+      "weight": 1.0,
+      "source": "process_injection_detector_py",
+      "target": "process_injection_detector_process_injection_detector_processinjectiondetector_handle_detection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L239",
+      "weight": 1.0,
+      "source": "process_injection_detector_py",
+      "target": "process_injection_detector_process_injection_detector_processinjectiondetector_save_event",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L253",
+      "weight": 1.0,
+      "source": "process_injection_detector_py",
+      "target": "process_injection_detector_process_injection_detector_processinjectiondetector_alert_admin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L260",
+      "weight": 1.0,
+      "context": "call",
+      "source": "process_injection_detector_process_injection_detector_main",
+      "target": "process_injection_detector_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "tests/test_basic.py",
+      "source_location": "L11",
+      "weight": 0.8,
+      "source": "tests_test_basic_testprocessinjectiondetector",
+      "target": "process_injection_detector_py",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "process_injection_detector_py",
+      "target": "detector_core"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "process_injection_detector_py",
+      "target": "contributing_guidelines"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L111",
+      "weight": 1.0,
+      "source": "process_injection_detector_process_injection_detector_processinjectiondetector_get_process_info",
+      "target": "process_injection_detector_process_injection_detector_processinfo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "tests/test_basic.py",
+      "source_location": "L11",
+      "weight": 0.8,
+      "source": "tests_test_basic_testprocessinjectiondetector",
+      "target": "process_injection_detector_process_injection_detector_processinfo",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L226",
+      "weight": 1.0,
+      "source": "process_injection_detector_process_injection_detector_processinjectiondetector_handle_detection",
+      "target": "process_injection_detector_process_injection_detector_injectionevent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L239",
+      "weight": 1.0,
+      "source": "process_injection_detector_process_injection_detector_processinjectiondetector_save_event",
+      "target": "process_injection_detector_process_injection_detector_injectionevent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L253",
+      "weight": 1.0,
+      "source": "process_injection_detector_process_injection_detector_processinjectiondetector_alert_admin",
+      "target": "process_injection_detector_process_injection_detector_injectionevent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L208",
+      "weight": 1.0,
+      "source": "process_injection_detector_process_injection_detector_processinjectiondetector_monitor_processes",
+      "target": "process_injection_detector_process_injection_detector_injectionevent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "process_injection_detector_process_injection_detector_processinjectiondetector_init",
+      "target": "process_injection_detector_process_injection_detector_processinjectiondetector_load_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "process_injection_detector_process_injection_detector_processinjectiondetector_init",
+      "target": "process_injection_detector_process_injection_detector_processinjectiondetector_check_privileges",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "process_injection_detector_process_injection_detector_rationale_72",
+      "target": "process_injection_detector_process_injection_detector_processinjectiondetector_load_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "process_injection_detector_process_injection_detector_rationale_89",
+      "target": "process_injection_detector_process_injection_detector_processinjectiondetector_check_privileges",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "process_injection_detector_process_injection_detector_processinjectiondetector_get_process_info",
+      "target": "process_injection_detector_py_int",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "process_injection_detector_process_injection_detector_processinjectiondetector_get_process_info",
+      "target": "process_injection_detector_py_process",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L106",
+      "weight": 1.0,
+      "source": "process_injection_detector_process_injection_detector_processinjectiondetector_get_process_info",
+      "target": "process_injection_detector_process_injection_detector_processinjectiondetector_verify_signature",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L109",
+      "weight": 1.0,
+      "source": "process_injection_detector_process_injection_detector_processinjectiondetector_get_process_info",
+      "target": "process_injection_detector_process_injection_detector_processinjectiondetector_calculate_file_hash",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L198",
+      "weight": 1.0,
+      "source": "process_injection_detector_process_injection_detector_processinjectiondetector_monitor_processes",
+      "target": "process_injection_detector_process_injection_detector_processinjectiondetector_get_process_info",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L100",
+      "weight": 1.0,
+      "source": "process_injection_detector_process_injection_detector_rationale_100",
+      "target": "process_injection_detector_process_injection_detector_processinjectiondetector_get_process_info",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L126",
+      "weight": 1.0,
+      "source": "process_injection_detector_process_injection_detector_processinjectiondetector_verify_signature",
+      "target": "process_injection_detector_py_str",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L126",
+      "weight": 1.0,
+      "source": "process_injection_detector_process_injection_detector_processinjectiondetector_verify_signature",
+      "target": "process_injection_detector_py_bool",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L127",
+      "weight": 1.0,
+      "source": "process_injection_detector_process_injection_detector_rationale_127",
+      "target": "process_injection_detector_process_injection_detector_processinjectiondetector_verify_signature",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L137",
+      "weight": 1.0,
+      "source": "process_injection_detector_process_injection_detector_processinjectiondetector_calculate_file_hash",
+      "target": "process_injection_detector_py_str",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L146",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_rationale_147",
+      "target": "process_injection_detector_py_str",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L166",
+      "weight": 1.0,
+      "source": "process_injection_detector_process_injection_detector_processinjectiondetector_detect_process_hollowing",
+      "target": "process_injection_detector_py_str",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L138",
+      "weight": 1.0,
+      "source": "process_injection_detector_process_injection_detector_rationale_138",
+      "target": "process_injection_detector_process_injection_detector_processinjectiondetector_calculate_file_hash",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L146",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_rationale_147",
+      "target": "process_injection_detector_py_process",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L166",
+      "weight": 1.0,
+      "source": "process_injection_detector_process_injection_detector_processinjectiondetector_detect_process_hollowing",
+      "target": "process_injection_detector_py_process",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L205",
+      "weight": 1.0,
+      "source": "process_injection_detector_process_injection_detector_processinjectiondetector_monitor_processes",
+      "target": "process_injection_detector_process_injection_detector_processinjectiondetector_detect_process_hollowing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L167",
+      "weight": 1.0,
+      "source": "process_injection_detector_process_injection_detector_rationale_167",
+      "target": "process_injection_detector_process_injection_detector_processinjectiondetector_detect_process_hollowing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L204",
+      "weight": 1.0,
+      "source": "process_injection_detector_process_injection_detector_processinjectiondetector_monitor_processes",
+      "target": "process_injection_detector_detector_rationale_147",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L216",
+      "weight": 1.0,
+      "source": "process_injection_detector_process_injection_detector_processinjectiondetector_monitor_processes",
+      "target": "process_injection_detector_process_injection_detector_processinjectiondetector_handle_detection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L261",
+      "weight": 1.0,
+      "source": "process_injection_detector_process_injection_detector_main",
+      "target": "process_injection_detector_process_injection_detector_processinjectiondetector_monitor_processes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L234",
+      "weight": 1.0,
+      "source": "process_injection_detector_process_injection_detector_processinjectiondetector_handle_detection",
+      "target": "process_injection_detector_process_injection_detector_processinjectiondetector_save_event",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L237",
+      "weight": 1.0,
+      "source": "process_injection_detector_process_injection_detector_processinjectiondetector_handle_detection",
+      "target": "process_injection_detector_process_injection_detector_processinjectiondetector_alert_admin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L227",
+      "weight": 1.0,
+      "source": "process_injection_detector_process_injection_detector_rationale_227",
+      "target": "process_injection_detector_process_injection_detector_processinjectiondetector_handle_detection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L240",
+      "weight": 1.0,
+      "source": "process_injection_detector_process_injection_detector_rationale_240",
+      "target": "process_injection_detector_process_injection_detector_processinjectiondetector_save_event",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector.py",
+      "source_location": "L254",
+      "weight": 1.0,
+      "source": "process_injection_detector_process_injection_detector_rationale_254",
+      "target": "process_injection_detector_process_injection_detector_processinjectiondetector_alert_admin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inject_test.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "inject_test_py",
+      "target": "process_injection_detector_inject_test_colors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inject_test.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "inject_test_py",
+      "target": "process_injection_detector_inject_test_print_banner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inject_test.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "inject_test_py",
+      "target": "process_injection_detector_inject_test_print_status",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inject_test.py",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "inject_test_py",
+      "target": "process_injection_detector_inject_test_is_admin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inject_test.py",
+      "source_location": "L100",
+      "weight": 1.0,
+      "source": "inject_test_py",
+      "target": "process_injection_detector_inject_test_find_or_start_target_process",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inject_test.py",
+      "source_location": "L132",
+      "weight": 1.0,
+      "source": "inject_test_py",
+      "target": "process_injection_detector_inject_test_inject_dll",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inject_test.py",
+      "source_location": "L230",
+      "weight": 1.0,
+      "source": "inject_test_py",
+      "target": "process_injection_detector_inject_test_find_dll_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "inject_test.py",
+      "source_location": "L258",
+      "weight": 1.0,
+      "source": "inject_test_py",
+      "target": "process_injection_detector_inject_test_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "inject_test.py",
+      "source_location": "L260",
+      "weight": 1.0,
+      "source": "process_injection_detector_inject_test_main",
+      "target": "process_injection_detector_inject_test_print_banner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "inject_test.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "process_injection_detector_inject_test_rationale_58",
+      "target": "process_injection_detector_inject_test_print_banner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "inject_test.py",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "process_injection_detector_inject_test_find_or_start_target_process",
+      "target": "process_injection_detector_inject_test_print_status",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "inject_test.py",
+      "source_location": "L134",
+      "weight": 1.0,
+      "source": "process_injection_detector_inject_test_inject_dll",
+      "target": "process_injection_detector_inject_test_print_status",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "inject_test.py",
+      "source_location": "L242",
+      "weight": 1.0,
+      "source": "process_injection_detector_inject_test_find_dll_path",
+      "target": "process_injection_detector_inject_test_print_status",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "inject_test.py",
+      "source_location": "L264",
+      "weight": 1.0,
+      "source": "process_injection_detector_inject_test_main",
+      "target": "process_injection_detector_inject_test_print_status",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "inject_test.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "process_injection_detector_inject_test_rationale_71",
+      "target": "process_injection_detector_inject_test_print_status",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "inject_test.py",
+      "source_location": "L263",
+      "weight": 1.0,
+      "source": "process_injection_detector_inject_test_main",
+      "target": "process_injection_detector_inject_test_is_admin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "inject_test.py",
+      "source_location": "L91",
+      "weight": 1.0,
+      "source": "process_injection_detector_inject_test_rationale_91",
+      "target": "process_injection_detector_inject_test_is_admin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "inject_test.py",
+      "source_location": "L287",
+      "weight": 1.0,
+      "source": "process_injection_detector_inject_test_main",
+      "target": "process_injection_detector_inject_test_find_or_start_target_process",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "inject_test.py",
+      "source_location": "L101",
+      "weight": 1.0,
+      "source": "process_injection_detector_inject_test_rationale_101",
+      "target": "process_injection_detector_inject_test_find_or_start_target_process",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "inject_test.py",
+      "source_location": "L293",
+      "weight": 1.0,
+      "source": "process_injection_detector_inject_test_main",
+      "target": "process_injection_detector_inject_test_inject_dll",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "inject_test.py",
+      "source_location": "L133",
+      "weight": 1.0,
+      "source": "process_injection_detector_inject_test_rationale_133",
+      "target": "process_injection_detector_inject_test_inject_dll",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "inject_test.py",
+      "source_location": "L279",
+      "weight": 1.0,
+      "source": "process_injection_detector_inject_test_main",
+      "target": "process_injection_detector_inject_test_find_dll_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "inject_test.py",
+      "source_location": "L231",
+      "weight": 1.0,
+      "source": "process_injection_detector_inject_test_rationale_231",
+      "target": "process_injection_detector_inject_test_find_dll_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "inject_test.py",
+      "source_location": "L259",
+      "weight": 1.0,
+      "source": "process_injection_detector_inject_test_rationale_259",
+      "target": "process_injection_detector_inject_test_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "detector_core",
+      "target": "process_injection_detector_detector_processinfo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L111",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_processinjectiondetector_get_process_info",
+      "target": "process_injection_detector_detector_processinfo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/__init__.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "process_injection_detector_init_py",
+      "target": "process_injection_detector_detector_processinfo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_basic.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "tests_test_basic_py",
+      "target": "process_injection_detector_detector_processinfo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "detector_core",
+      "target": "process_injection_detector_detector_injectionevent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L226",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_processinjectiondetector_handle_detection",
+      "target": "process_injection_detector_detector_injectionevent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L239",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_processinjectiondetector_save_event",
+      "target": "process_injection_detector_detector_injectionevent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L253",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_processinjectiondetector_alert_admin",
+      "target": "process_injection_detector_detector_injectionevent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L208",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_processinjectiondetector_monitor_processes",
+      "target": "process_injection_detector_detector_injectionevent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/__init__.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "process_injection_detector_init_py",
+      "target": "process_injection_detector_detector_injectionevent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "detector_core",
+      "target": "process_injection_detector_detector_processinjectiondetector",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_processinjectiondetector",
+      "target": "process_injection_detector_detector_processinjectiondetector_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_processinjectiondetector",
+      "target": "process_injection_detector_detector_processinjectiondetector_load_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_processinjectiondetector",
+      "target": "process_injection_detector_detector_processinjectiondetector_check_privileges",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_processinjectiondetector",
+      "target": "process_injection_detector_detector_processinjectiondetector_get_process_info",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L126",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_processinjectiondetector",
+      "target": "process_injection_detector_detector_processinjectiondetector_verify_signature",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L137",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_processinjectiondetector",
+      "target": "process_injection_detector_detector_processinjectiondetector_calculate_file_hash",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L146",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_processinjectiondetector",
+      "target": "process_injection_detector_detector_processinjectiondetector_detect_classic_injection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L166",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_processinjectiondetector",
+      "target": "process_injection_detector_detector_processinjectiondetector_detect_process_hollowing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L187",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_processinjectiondetector",
+      "target": "process_injection_detector_detector_processinjectiondetector_monitor_processes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L226",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_processinjectiondetector",
+      "target": "process_injection_detector_detector_processinjectiondetector_handle_detection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L239",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_processinjectiondetector",
+      "target": "process_injection_detector_detector_processinjectiondetector_save_event",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L253",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_processinjectiondetector",
+      "target": "process_injection_detector_detector_processinjectiondetector_alert_admin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L260",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_main",
+      "target": "process_injection_detector_detector_processinjectiondetector",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/__init__.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "process_injection_detector_init_py",
+      "target": "process_injection_detector_detector_processinjectiondetector",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_basic.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "tests_test_basic_py",
+      "target": "process_injection_detector_detector_processinjectiondetector",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_processinjectiondetector_init",
+      "target": "process_injection_detector_detector_processinjectiondetector_load_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_processinjectiondetector_init",
+      "target": "process_injection_detector_detector_processinjectiondetector_check_privileges",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_rationale_72",
+      "target": "process_injection_detector_detector_processinjectiondetector_load_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_rationale_89",
+      "target": "process_injection_detector_detector_processinjectiondetector_check_privileges",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_processinjectiondetector_get_process_info",
+      "target": "process_injection_detector_detector_py_int",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_processinjectiondetector_get_process_info",
+      "target": "process_injection_detector_detector_py_process",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L106",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_processinjectiondetector_get_process_info",
+      "target": "process_injection_detector_detector_processinjectiondetector_verify_signature",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L109",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_processinjectiondetector_get_process_info",
+      "target": "process_injection_detector_detector_processinjectiondetector_calculate_file_hash",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L198",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_processinjectiondetector_monitor_processes",
+      "target": "process_injection_detector_detector_processinjectiondetector_get_process_info",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L100",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_rationale_100",
+      "target": "process_injection_detector_detector_processinjectiondetector_get_process_info",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L126",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_processinjectiondetector_verify_signature",
+      "target": "process_injection_detector_detector_py_str",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L126",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_processinjectiondetector_verify_signature",
+      "target": "process_injection_detector_detector_py_bool",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L127",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_rationale_127",
+      "target": "process_injection_detector_detector_processinjectiondetector_verify_signature",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L137",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_processinjectiondetector_calculate_file_hash",
+      "target": "process_injection_detector_detector_py_str",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L146",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_processinjectiondetector_detect_classic_injection",
+      "target": "process_injection_detector_detector_py_str",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L166",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_processinjectiondetector_detect_process_hollowing",
+      "target": "process_injection_detector_detector_py_str",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L138",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_rationale_138",
+      "target": "process_injection_detector_detector_processinjectiondetector_calculate_file_hash",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L146",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_processinjectiondetector_detect_classic_injection",
+      "target": "process_injection_detector_detector_py_process",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L204",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_processinjectiondetector_monitor_processes",
+      "target": "process_injection_detector_detector_processinjectiondetector_detect_classic_injection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L147",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_rationale_147",
+      "target": "process_injection_detector_detector_processinjectiondetector_detect_classic_injection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L166",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_processinjectiondetector_detect_process_hollowing",
+      "target": "process_injection_detector_detector_py_process",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L205",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_processinjectiondetector_monitor_processes",
+      "target": "process_injection_detector_detector_processinjectiondetector_detect_process_hollowing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L167",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_rationale_167",
+      "target": "process_injection_detector_detector_processinjectiondetector_detect_process_hollowing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L216",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_processinjectiondetector_monitor_processes",
+      "target": "process_injection_detector_detector_processinjectiondetector_handle_detection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L261",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_main",
+      "target": "process_injection_detector_detector_processinjectiondetector_monitor_processes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L234",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_processinjectiondetector_handle_detection",
+      "target": "process_injection_detector_detector_processinjectiondetector_save_event",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L237",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_processinjectiondetector_handle_detection",
+      "target": "process_injection_detector_detector_processinjectiondetector_alert_admin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L227",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_rationale_227",
+      "target": "process_injection_detector_detector_processinjectiondetector_handle_detection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L240",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_rationale_240",
+      "target": "process_injection_detector_detector_processinjectiondetector_save_event",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L254",
+      "weight": 1.0,
+      "source": "process_injection_detector_detector_rationale_254",
+      "target": "process_injection_detector_detector_processinjectiondetector_alert_admin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/detector.py",
+      "source_location": "L258",
+      "weight": 1.0,
+      "source": "detector_core",
+      "target": "process_injection_detector_detector_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/__init__.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "process_injection_detector_init_py",
+      "target": "process_injection_detector_detector_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "re_exports",
+      "context": "export",
+      "confidence": "EXTRACTED",
+      "source_file": "process_injection_detector/__init__.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "process_injection_detector_init_py",
+      "target": "detector_core",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_basic.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "tests_test_basic_py",
+      "target": "tests_test_basic_testprocessinjectiondetector",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_basic.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "tests_test_basic_testprocessinjectiondetector",
+      "target": "tests_test_basic_testprocessinjectiondetector_setup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_basic.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "tests_test_basic_testprocessinjectiondetector",
+      "target": "tests_test_basic_testprocessinjectiondetector_teardown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_basic.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "tests_test_basic_testprocessinjectiondetector",
+      "target": "tests_test_basic_testprocessinjectiondetector_test_process_info_creation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_basic.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "tests_test_basic_testprocessinjectiondetector",
+      "target": "tests_test_basic_testprocessinjectiondetector_test_config_loading",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_basic.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "tests_test_basic_rationale_16",
+      "target": "tests_test_basic_testprocessinjectiondetector_setup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_basic.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "tests_test_basic_rationale_35",
+      "target": "tests_test_basic_testprocessinjectiondetector_test_process_info_creation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_basic.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "tests_test_basic_rationale_59",
+      "target": "tests_test_basic_testprocessinjectiondetector_test_config_loading",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "detector_core",
+      "target": "requirements_psutil"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "detector_core",
+      "target": "requirements_pywin32"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "detector_core",
+      "target": "config_json"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "detector_core",
+      "target": "concept_dll_injection"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "detector_core",
+      "target": "concept_process_hollowing"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "detector_core",
+      "target": "concept_memory_anomalies"
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "01d9a1bc12ad5e69c18d0ec16583c8d036ad584e"
+}

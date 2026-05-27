@@ -117,3 +117,5 @@ dmypy.json
 process_injection_detector.log
 detection_events.json
 config.json 
+# graphify cache
+graphify-out/cache/
